@@ -1,0 +1,7 @@
+# AI-Thinker ESP32-CAM punya 4MB PSRAM eksternal — WAJIB aktif,
+# karena frame buffer JPEG kamera disimpan di PSRAM (CAMERA_FB_IN_PSRAM di main.c).
+# Tanpa ini, esp_camera_init() akan gagal alokasi memori.
+CONFIG_SPIRAM=y
+CONFIG_SPIRAM_MODE_QUAD=y
+CONFIG_SPIRAM_USE_MALLOC=y
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
