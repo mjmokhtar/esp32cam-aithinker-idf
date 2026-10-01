@@ -1,5 +1,7 @@
 # ESP32-CAM (AI-Thinker) — MJPEG Web Streaming Server
 
+🇮🇩 Bahasa Indonesia | [🇬🇧 English](README.en.md)
+
 Web camera server sederhana untuk board **AI-Thinker ESP32-CAM** (chip ESP32 classic — **bukan** ESP32-S3), pakai library `esp32-camera` + `esp_http_server` bawaan ESP-IDF.
 
 Board ini jalan sebagai **WiFi Access Point (AP)** sendiri — tidak connect ke router rumah. Cukup connect HP/laptop ke WiFi board ini, lalu buka browser untuk lihat stream kamera.
